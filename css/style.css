@@ -179,6 +179,54 @@ body {
     color: var(--primary-color);
 }
 
+.resume-section {
+    background: var(--card-bg);
+    padding: 4rem 2rem;
+    text-align: center;
+    margin: 4rem auto;
+}
+
+.resume-section .section-title {
+    margin-bottom: 1rem;  
+}
+
+.resume-subtitle {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.resume-download {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.resume-button {
+    background: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resume-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    background: var(--accent-color);
+}
+
+.resume-button i {
+    font-size: 1.2rem;
+}
+
 .tech-logos {
     background: var(--card-bg);
     padding: 4rem 2rem;
