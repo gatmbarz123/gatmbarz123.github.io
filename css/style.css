@@ -7,7 +7,7 @@
     --card-bg: #ffffff;
     --gradient-start: #ff6b35;
     --gradient-end: #ff8c61;
-} 
+}
 
 * {
     margin: 0;
@@ -179,15 +179,19 @@ body {
     color: var(--primary-color);
 }
 
+/* Resume Section Styles */
 .resume-section {
     background: var(--card-bg);
     padding: 4rem 2rem;
     text-align: center;
     margin: 4rem auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .resume-section .section-title {
-    margin-bottom: 1rem;  
+    margin-bottom: 1rem;
 }
 
 .resume-subtitle {
@@ -292,5 +296,9 @@ body {
 
     .about-section {
         margin: -2rem 1rem 2rem;
+    }
+
+    .resume-section {
+        margin: 4rem 1rem;
     }
 }
