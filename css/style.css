@@ -97,9 +97,6 @@ body {
 }
 
 .project-card {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
     background: var(--card-bg);
     border-radius: 10px;
     padding: 2rem;
@@ -139,29 +136,26 @@ body {
     margin-top: 0.5rem;
 }
 
-/* Updated project image styles */
+/* Updated Project Image Styles */
 .project-image {
     margin: 1.5rem 0;
     border-radius: 8px;
     border: 1px solid #edf2f7;
     background: #f8fafc;
     width: 100%;
-    /* Remove any height constraints */
-    /* Remove overflow: hidden */
-    /* Remove position properties */
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .architecture-diagram {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
     height: auto;
-    display: block;
-    /* Remove object-fit */
-    /* Remove position properties */
-}
-
-
-.project-image:hover .architecture-diagram {
-    transform: scale(1.02);
+    object-fit: contain;
 }
 
 .tech-stack {
@@ -314,9 +308,9 @@ body {
     .hero {
         clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     }
-
+    
     .project-image {
-        margin: 1rem 0;
+        height: 300px; /* Maintain height on tablets */
     }
 }
 
@@ -335,6 +329,10 @@ body {
 
     .project-card {
         padding: 1.5rem;
+    }
+
+    .project-image {
+        height: 250px; /* Slightly smaller on mobile */
     }
 
     .tech-stack {
@@ -369,6 +367,6 @@ body {
     }
 
     .project-image {
-        padding-top: 75%; /* Adjusted aspect ratio for mobile */
+        height: 200px; /* Even smaller on very small screens */
     }
 }
