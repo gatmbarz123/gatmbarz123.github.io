@@ -143,28 +143,22 @@ body {
 .project-image {
     margin: 1.5rem 0;
     border-radius: 8px;
-    overflow: hidden;
     border: 1px solid #edf2f7;
     background: #f8fafc;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding-top: 56.25%; /* 16:9 aspect ratio */
+    /* Remove any height constraints */
+    /* Remove overflow: hidden */
+    /* Remove position properties */
 }
 
 .architecture-diagram {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    height: auto;
     display: block;
-    transition: transform 0.3s ease;
-    padding: 1rem;
+    /* Remove object-fit */
+    /* Remove position properties */
 }
+
 
 .project-image:hover .architecture-diagram {
     transform: scale(1.02);
